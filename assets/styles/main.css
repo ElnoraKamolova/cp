@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100vh;
+    background: url('../images/Rectangle\ 678.png');
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #333333;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li:hover{
+    transform: scale(1.5);
+}
+
+.showcase{
+    display: flex;
+    margin-top: 130px;
+    gap: 10%;
+}
+
+.showcase > div {
+    flex: 1;
+}
+
+.showcase-left h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.showcase-left p{
+    padding: 47px 0;
+
+}
+
+.showcase-left button{
+    border-radius: 100px;
+    background: #0A775F;
+    padding: 16px 24px;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.showcase-right{
+    position: relative;
+}
+
+.showcase-right img:nth-child(2) {
+    position: absolute;
+    top: -15%;
+    left: -15%;
+
+    animation-name: img-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.showcase img:nth-child(1) {
+    width: 100%;
+}
+
+@keyframes img-2 {
+    form {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
